@@ -1,0 +1,93 @@
+*{
+    width: auto
+
+}
+
+
+.container{
+    background: linear-gradient(rgba(21, 85, 66, 0.5),rgba(144, 216, 11, 0.5));
+    width:100%;
+    height:100vh;
+    flex-direction: column;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.box{
+    width:75%;
+    height:70vh;
+    /* background: red; */
+    border-radius:20%;
+    border:2px solid #999999;
+    display:flex;
+justify-content: space-between;
+
+}
+.temperature{
+width:30%;
+background: gray;
+border-top-right-radius:20%;
+border-bottom-right-radius:20%;
+}
+.cloud{
+    width:60%;
+    background: rgb(156, 20, 20);
+border-top-left-radius:20%;
+border-bottom-left-radius:20%;
+display: grid;
+grid-template-columns: repeat(7, 100px);
+grid-template-rows:repeat(3,30%);
+flex-wrap: wrap;
+grid-row-gap: 5%;
+}
+
+.first{
+background: blue;
+display: flex;
+justify-content: center;
+align-items: center;
+grid-column:1/5;
+grid-row:1/2
+}
+.second{
+    background: rgb(0, 255, 98);
+    grid-column:6/7;
+grid-row:1/2
+}
+.third{
+    background: rgb(255, 0, 140);
+    grid-column:3/5;
+grid-row:2/3;
+font-size: 100px;
+align-items: center;
+display:grid;
+grid-template-columns: repeat(4, 60px);
+grid-template-rows: repeat(4, 25%)
+}
+
+.third .number{
+background: green;
+grid-column:1/3;
+grid-row:1/5
+}
+.third .temperatureUnit{
+background: yellow;
+font-size: 25px;
+grid-column:3/4;
+grid-row:1/2
+}
+.temperaturesymbol{
+    background: rgb(0, 81, 255);
+    font-size: 75px;
+    grid-column:3/4;
+    grid-row:2/5
+}
+
+.forth{
+    background: rgb(255, 38, 0);
+    grid-column:2/7;
+grid-row:3/4
+}
+

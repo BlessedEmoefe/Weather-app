@@ -45,6 +45,8 @@ grid-row-gap: 5%;
 
 .first{
 background: blue;
+color:white;
+font-size: 35px;
 display: flex;
 justify-content: center;
 align-items: center;
